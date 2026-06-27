@@ -253,18 +253,52 @@ body {
   color: var(--navy-blue);
 }
 .our-team-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
 }
 .our-team-list-item {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: var(--white);
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px;
 }
 .team-card-img {
+  margin-bottom: 32px;
 }
 .team-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  /* margin: 32px 16px; */
 }
 .team-conten-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
 }
 .team-content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--slate);
 }
 .team-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
 }
-.team-social-item {
-}
+/* .team-social-item {
+} */

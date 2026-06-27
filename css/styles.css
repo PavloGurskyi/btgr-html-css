@@ -1,4 +1,5 @@
 /*main wrapper*/
+
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -33,7 +34,9 @@ body {
   align-items: center;
   padding: 0 156px;
 }
+
 /*header*/
+
 .header {
   display: flex;
   flex-direction: row;
@@ -115,11 +118,14 @@ body {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
-.header-contacts-unit:hover {
+.header-contacts-unit:hover,
+.header-contacts-unit:active {
   color: var(--ocean);
+  cursor: pointer;
 }
 
 /* hero section */
+
 .hero {
   position: relative;
 }
@@ -227,4 +233,38 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+}
+
+/* Our team */
+
+.our-team {
+  background: var(--cloud);
+}
+.our-team-content {
+  margin: 120px auto;
+}
+.section-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+.our-team-list {
+}
+.our-team-list-item {
+}
+.team-card-img {
+}
+.team-content {
+}
+.team-conten-title {
+}
+.team-content-text {
+}
+.team-social-list {
+}
+.team-social-item {
 }

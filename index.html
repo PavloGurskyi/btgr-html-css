@@ -4,41 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <section class="section">
-      <h1>Effective Solutions for Your Business</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-        voluptatum odio ab, dolor tempore totam.
-      </p>
-      <a
-        href="https://google.com"
-        class="tomatoLink"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Посилання на Google пошук</a
-      >
-      <a
-        href="https://google.com"
-        class="tomatoLink"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><img
-          src="https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg"
-          alt="Пошук Google"
-          width="320"
-          title="Пошук Google"
-      /></a>
-
-      <input class="input" type="text" placeholder="Enter your name" />
-      <h2>На відкритті<br />ЛТ "Кічкас"<br />були присутні:</h2>
-      <ul>
-        <li>Конор</li>
-        <li>Град</li>
-        <li>Нєжний</li>
-      </ul>
-    </section>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header container">
+        <nav class="nav">
+          <a href="./index.html" class="logo">WebStudio</a>
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li><a href="./index.html" class="nav-link">Studio</a></li>
+              <li><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
+              <li><a href="./contacts.html" class="nav-link">Contacts</a></li>
+            </ul>
+          </nav>
+        </nav>
+      </header>
+      <main>
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Effective Solutions <br />
+              for Your Business
+            </h1>
+            <button class="hero-button">Order Service</button>
+          </div>
+          <div class="hero-image-wrapper">
+            <img
+              src="./img/hero/hero-image.jpg"
+              alt="People working together"
+              class="hero-image"
+              width="1440"
+            />
+          </div>
+        </section>
+        <!-- Advantages -->
+        <!-- Our team -->
+        <!-- Our portfolio-->
+      </main>
+      <!-- Footer -->
+      <footer></footer>
+    </div>
   </body>
 </html>

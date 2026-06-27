@@ -41,7 +41,7 @@ E-mail: <a href="mailto:pavlo.gurskiy@gmail.com">pavlo.gurskiy@gmail.com</a>
 
 Call us: <a href="+380633610751">+38(063)361-07-51</a>
 
-<!-- *?* ==> download -->
+<!-- ? ==> download -->
 
 <a href="./way/to/cv.pdf" download="My CV">Завантажити файл</a>
 
@@ -56,3 +56,10 @@ title="image description"
 <!-- todo ==> убрать точки зі списку -->
 
 list-style: none;
+
+<!-- * ==> Таблиця -->
+
+<table> - таблиця
+<tr> - рядок
+<td> - комірка
+<th> - bold

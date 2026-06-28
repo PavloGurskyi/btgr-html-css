@@ -14,6 +14,9 @@
   --white: #fff;
   --dairy: #fcfcfc;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -53,6 +56,7 @@ body {
   text-align: center;
   color: var(--navy-blue);
   margin-right: 76px;
+  text-transform: uppercase;
 }
 .logo span {
   color: var(--iris);
@@ -79,14 +83,14 @@ body {
   background-color: var(--ocean);
 
   opacity: 0;
-  transform: scaleX(0);
+  /* transform: scaleX(0); */
   transition:
     opacity 0.3s ease,
     transform 0.3s ease;
 }
 .nav-link:hover::after {
   opacity: 1;
-  transform: scaleX(1);
+  /* transform: scaleX(1); */
 }
 .nav {
   display: flex;
@@ -207,8 +211,6 @@ body {
   gap: 24px;
   margin: 120px auto;
 }
-.advantages-item {
-}
 .advant-icon-box {
   display: flex;
   justify-content: center;
@@ -275,7 +277,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  /* margin: 32px 16px; */
 }
 .team-conten-title {
   font-weight: 500;
@@ -300,5 +301,160 @@ body {
   flex-direction: row;
   gap: 24px;
 }
-/* .team-social-item {
-} */
+
+/* Our portfolio */
+
+.portfolio-content {
+  margin: 120px auto;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 19px;
+  row-gap: 48px;
+}
+.portfolio-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+  /* padding: 32px 16px; */
+}
+.portfolio-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 32px 16px;
+}
+.portfolio-content-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+.portfolio-content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--navy-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  padding: 100px 156px;
+}
+.foot-logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  margin-right: 120px;
+}
+.foot-logo {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--cloud);
+  text-transform: uppercase;
+}
+
+.foot-logo span {
+  color: var(--iris);
+}
+
+.foot-logo-text {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+}
+.foot-social {
+  margin-right: 80px;
+  width: 208px;
+}
+.foot-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+.foot-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+}
+.footer-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  gap: 24px;
+}
+.foot-subscribe-box {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe-input {
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: inherit;
+  padding-left: 16px;
+  color: var(--cloud);
+}
+.subscribe-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: row; */
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 36px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--iris);
+  color: var(--white);
+  font-weight: 500;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+.subscribe-button img {
+  display: block;
+}
+.foot-social-list .team-social-item {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.foot-social-list img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
